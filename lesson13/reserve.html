@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Temple Inn</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="main-nav" class="main-nav">
+                <li class="nav-links"><a href="index.html">Home</a></li>
+                <li class="nav-links active"><a href="reserve.html">Reservations</a></li>
+                <li class="nav-links"><a href="temple.html">Temple</a></li>
+                <li class="nav-links"><a href="services.html">Services</a></li>
+                <li class="nav-links"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="reserve-main">
+        <img src="images/logo.png" class="logo" alt="logo">
+        <fieldset>
+            <form class="form" action="thankyou.html">
+                <label class="labels" for="name">Full Name: </label>
+                <input class="inputs" name="fullname" type="text" pattern="[^s][A-z0-9À-žs]+{5,}" required><br>
+                <label class="labels" for="email">Email: </label>
+                <input class="inputs" name="email" type="email" placeholder="someone@gmail.com"><br>
+                <label class="labels" for="phone">Phone:</label>
+                <input class="inputs" name="phone" type="tel" required><br>
+                <label class="labels" for="room">Number of rooms </label>
+                <select name="stormRegions" id="rooms">
+                    <option class="options" value="select" selected disabled>Select Option: </option><!--The Select Option doesn't show up first-->
+                    <option class="options" value="one">1</option>
+                    <option class="options" value="two">2</option>
+                    <option class="options" value="three">3</option>
+                  </select><br><br>
+
+                <label class="labels" for="location">Location: </label><br>
+                <input type="radio" name="option" value="dallas">
+                <label class="options" for="option1">Dallas, Texas</label><br>
+                <input type="radio" name="option" value="rexburg">
+                <label class="options" for="option1">Rexburg, Idaho</label><br>
+                <input type="radio" name="option" value="san diego">
+                <label class="options" for="option1">San Diego, California</label><br>
+                <input type="radio" name="option" value="oakland">
+                <label class="options" for="option1">Oakland, California</label><br><br>
+
+                <label class="labels" for="comment">Additional Preferences:</label><br>
+                <textarea name="comments" rows="5" cols="50"></textarea><br>
+                <input name="submit" type="submit">
+            </form>
+        </fieldset>
+    </main>
+    <footer>
+        <p>&copy; Maryna Kryvoruchenko | 2021 | WDD Final Project</p>
+    </footer>
+</body>
+</html>
