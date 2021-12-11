@@ -1,3 +1,4 @@
+//Picture Slideshow
 var currentSlide = 0;
 const slides = document.querySelectorAll(".slide")
 const dots = document.querySelectorAll('.dot')
@@ -37,3 +38,4 @@ dots.forEach((dot, index) => {
     currentSlide = i
     })
   })
+

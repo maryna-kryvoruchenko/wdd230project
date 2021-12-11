@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="temple.js" defer></script>
+    <script src="oakland-weather.js" defer></script>
+    <link rel="icon" href="images/logo.png" type="image/gif" sizes="25x25">
+    <title>Temple Inn</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="main-nav" class="main-nav">
+                <li class="nav-links"><a href="index.html">Home</a></li>
+                <li class="nav-links"><a href="reserve.html">Reservations</a></li>
+                <li class="nav-links active"><a href="temple.html">Temple</a></li>
+                <li class="nav-links"><a href="services.html">Services</a></li>
+                <li class="nav-links"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="temple-main">
+        <img src="images/logo.png" class="logo" alt="logo">
+        <div id="summary">
+            <h2 id="summary_h2">Weather Summary</h2>
+            <ul class="weather-ul">
+                <li><div class="current" id="currently"></div></li>
+                <li><div class="current" id="temp"></div></li>
+                <li><div class="current" id="humidity"></div></li>
+                <li><div class="current" id="wind"></div></li>
+                <li>Wind Chill: <span class="current" id="windchill"></span> °F</li>
+            </ul>
+        </div>
+
+        <img class="temple-pic" src="images/oakland.jpg" alt="Oakland California Temple">
+
+        <div class="additionalInfo">
+            <div class="sectionOne">
+                <h3 class="additionalHeading">Address</h3>
+                <p class="additionalPar">
+                    4770 Lincoln Ave<br>
+                    Oakland CA 94602-2535<br>
+                    United States
+                </p>
+            </div>
+            <div class="sectionTwo">
+                <h3 class="additionalHeading">Phone Number</h3>
+                <p class="additionalPar">
+                    (1) 510-531-3200
+                </p>
+            </div>
+            <div class="sectionThree">
+                <h3 class="additionalHeading">Closure Dates</h3>
+                <h4 class="additionalHeading">2021</h4>
+                <ul class="additionalPar">
+                    <li>Friday, 24 December 2021</li>
+                    <li>Saturday, 25 December 2021</li>
+                    <li>Friday, 31 December 2021</li>
+                </ul>
+                <h4 class="additionalHeading">2022</h4>
+                <ul class="additionalPar">
+                    <li>Saturday, 1 January 2022</li>
+                    <li>Monday, 14 March 2022 - Monday, 28 March 2022</li>
+                    <li>Saturday, 2 April 2022</li>
+                    <li>Monday, 12 September 2022 - Monday, 26 September 2022</li>
+                    <li>Saturday, 1 October 2022</li>
+                    <li>Wednesday, 23 November 2022 (Limited Operations)</li>
+                    <li>Thursday, 24 November 2022</li>
+                    <li>Saturday, 24 December 2022</li>
+                    <li>Saturday, 31 December 2022</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Maryna Kryvoruchenko | 2021 | WDD Final Project</p>
+    </footer>
+</body>
+</html>
