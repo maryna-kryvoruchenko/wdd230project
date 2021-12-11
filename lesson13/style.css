@@ -331,3 +331,13 @@ fieldset {
   font-family: 'Source Sans 3', sans-serif;
   font-weight: bold;
 }
+
+/* Services Page */
+.options {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: bold;
+}
+
+.optionHeading {
+  font-family: 'Playfair Display', serif;
+}
