@@ -14,12 +14,16 @@ async function showTemple() {
           card.className = "temple_sections";
           if (item.name == "Oakland California Temple") {
             card.href = "oakland-weather.html";
+            card.id = "oakland-card";
           } else if (item.name == "Dallas Texas Temple") {
             card.href = "dallas-weather.html";
+            card.id = "dallas-card";
           } else if (item.name == "Rexburg Idaho Temple") {
             card.href = "rexburg-weather.html";
+            card.id = "rexburg-card";
           } else {
             card.href = 'saltLake-weather.html';
+            card.id = "saltLake-card";
           }
           
             let h2 = document.createElement('h2');

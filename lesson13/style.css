@@ -341,3 +341,94 @@ fieldset {
 .optionHeading {
   font-family: 'Playfair Display', serif;
 }
+
+.servicesPic {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 760px) {
+  #temple {
+    display: grid;
+  }
+
+  #dallas-card {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #oakland-card {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  #rexburg-card {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #saltLake-card {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .quoteDiv {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #temple {
+    display: grid;
+  }
+
+  #dallas-card {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #oakland-card {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #rexburg-card {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  #saltLake-card {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .slide-container {
+    max-width: 350px;
+  }
+
+  .quoteDiv {
+    max-width: 350px;
+  }
+
+  footer {
+    max-width: 450px;
+  }
+
+  .temple-main,
+  .servicesPic {
+    max-width: 300px;
+  }
+
+  .temple-main {
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .map {
+    max-width: 350px;
+    padding: 10px;
+  }
+}

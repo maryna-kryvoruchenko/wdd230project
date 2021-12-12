@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="temple.js" defer></script>
+    <script src="saltLake-weather.js" defer></script>
+    <link rel="icon" href="images/logo.png" type="image/gif" sizes="25x25">
+    <title>Temple Inn</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="main-nav" class="main-nav">
+                <li class="nav-links"><a href="index.html">Home</a></li>
+                <li class="nav-links"><a href="reserve.html">Reservations</a></li>
+                <li class="nav-links"><a href="temple.html">Temple</a></li>
+                <li class="nav-links"><a href="services.html">Services</a></li>
+                <li class="nav-links active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="temple-main">
+        <img src="images/logo.png" class="logo" alt="logo">
+        <form class="form" action="thankyou.html">
+            <label class="labels" for="name">Full Name: </label>
+            <input class="inputs" name="fullname" type="text" pattern="[^s][A-z0-9À-žs]+{5,}" required><br>
+            <label class="labels" for="email">Email: </label>
+            <input class="inputs" name="email" type="email" placeholder="someone@gmail.com"><br>
+            <label class="labels" for="phone">Phone:</label>
+            <input class="inputs" name="phone" type="tel" required><br><br>
+
+            <label class="labels" for="comment">Your Question:</label><br>
+            <textarea name="comments" rows="5" cols="50"></textarea><br>
+            <input class="button2" name="submit" type="submit">
+        </form>
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370284895!2d-77.09772048515225!3d38.98325594948471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1639263288337!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </main>
+    <footer>
+        <p>&copy; Maryna Kryvoruchenko | 2021 | WDD Final Project</p>
+    </footer>
+</body>
+</html>
